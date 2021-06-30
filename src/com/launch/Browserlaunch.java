@@ -8,12 +8,15 @@ import org.openqa.selenium.support.ui.Select;
 
 public class Browserlaunch  {
 
+
     public static void main(String[] args) throws InterruptedException {
-        String title = "Facebook – log in or sign up";
+
+
         System.setProperty("webdriver.Chrome.driver","/Users/labbuser/IdeaProjects/YTFramework/Driver/chromedriver");
         WebDriver driver1 = new ChromeDriver();
         Browserlaunch bl =new Browserlaunch();
         bl.launch(driver1);
+
         WebElement register = driver1.findElement(By.linkText("Create New Account"));
         register.click();
        Thread.sleep(2000);
